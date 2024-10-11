@@ -1,0 +1,10 @@
+{
+  "blue-topaz-theme@@background-settings-workplace-background-image": true,
+  "blue-topaz-theme@@background-settings-workplace-theme-light": "background-settings-workplace-theme-light-in-the-note",
+  "blue-topaz-theme@@blur-depth": 5,
+  "blue-topaz-theme@@brightness-4-bg": 1.1,
+  "blue-topaz-theme@@saturate-4-bg": 1,
+  "blue-topaz-theme@@bt-background-split-container@@light": "#FFFFFF00",
+  "blue-topaz-theme@@background-settings-workplace-theme-dark": "background-settings-workplace-theme-dark-custom-option",
+  "blue-topaz-theme@@background-settings-workplace-theme-dark-custom": "url(\"https://runzblog.oss-cn-hangzhou.aliyuncs.com/universal/background1.jpg\")"
+}
