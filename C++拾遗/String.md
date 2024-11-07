@@ -4,7 +4,7 @@
 
 ## 简介
 
-`string` 是 C++ 风格的字符串类，也是一种STL容器。相比于 C 风格的字符串 `char[]` ，string 支持自动内存管理，并且拥有很多方便的函数。
+`string` 是 C++ 风格的字符串类，也是一种STL容器(根据CppReference说法，string是唯一的`伪容器`)。相比于 C 风格的字符串 `char[]` ，string 支持自动内存管理，并且拥有很多方便的函数。
 
 头文件：`string`
 
