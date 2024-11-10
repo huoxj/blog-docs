@@ -11,13 +11,14 @@
             "id": "31082c7d1806f59e",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": "有意思的折腾/使用VMware给物理硬盘装系统.md",
-                "staged": false
+                "file": "C++拾遗/C++11-移动语义与右值引用.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "git-pull-request",
-              "title": "Diff View (使用VMware给物理硬盘装系统)"
+              "icon": "lucide-file",
+              "title": "C++11-移动语义与右值引用"
             }
           }
         ]
@@ -32,7 +33,7 @@
       {
         "id": "d828a3dd0b710afb",
         "type": "tabs",
-        "dimension": 38.05073431241656,
+        "dimension": 44.32576769025367,
         "children": [
           {
             "id": "88498ee7523d86bc",
@@ -78,16 +79,18 @@
       {
         "id": "c65ca977317b9e15",
         "type": "tabs",
-        "dimension": 61.94926568758344,
+        "dimension": 55.67423230974633,
         "children": [
           {
             "id": "603058de68f1ec91",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "C++拾遗/C++11-移动语义与右值引用.md"
+              },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "C++11-移动语义与右值引用 的大纲"
             }
           }
         ]
@@ -180,11 +183,16 @@
   },
   "active": "31082c7d1806f59e",
   "lastOpenFiles": [
+    "芝士收容所/读论文-YOLO v1.md",
+    "C++拾遗/C++11-移动语义与右值引用.md",
+    "CS149-并行计算/Asst1.md",
+    "芝士收容所",
+    "C++拾遗/指针、引用与数组.md",
+    "CS149-并行计算",
     "C++拾遗/类型解释.md",
     "C++拾遗/关键字.md",
     "C++拾遗/String.md",
     "C++拾遗/STL.md",
-    "C++拾遗/指针、引用与数组.md",
     "随记/随记.md",
     "算法与数据结构/单调队列 & 单调栈.md",
     "算法与数据结构/专题定位.md",
