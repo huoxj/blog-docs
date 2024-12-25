@@ -681,7 +681,56 @@ struct Stack{
 
 好写很多。
 
+#### concept
 
+约束类模板和函数模板的模板类型和非类型参数的命名要求。
+
+比如，限制函数模板不能是指针：
+```cpp
+template<typename T>
+concept DataAvailable = !std::is_pointer<T>::value;
+
+template <DataAvailable T>
+void function(T t) {...}
+```
+
+其他写法：
+```cpp
+template <typename T>
+requires DataAvilable
+void function(T t) {...}
+
+template <typename T>
+void function(T t) requires DataAvilable<T> {...}
+
+void function(DataAvilable auto v) {...}
+```
+
+可以用 `&&` 组合多个约束：
+
+```cpp
+```cpp
+template <typename T>
+concept signed_integral = integral<T> && std::is_signed_v<T>;
+```
+
+#### SFINAE
+
+Substitution Failure Is Not An Error
+
+模板的匹配失败不是错误。在匹配类型失败后，编译器还需要尝试其他的可能性
+
+#### 参考
+
+[C++20: Concept详解以及个人理解 - 知乎](https://zhuanlan.zhihu.com/p/266086040)
+
+[C++模板进阶指南：SFINAE - 知乎](https://zhuanlan.zhihu.com/p/21314708)
+
+---
+
+### 元编程 Meta programming / constexpr
+
+在编译期就计算出运行时需要的东西。
 
 ---
 
@@ -690,6 +739,21 @@ struct Stack{
 ### 面向对象概念
 
 ### 构造函数
+
+#### 构造函数
+
+构造函数有三种：
+- 无参构造函数
+- 有参构造函数
+- 拷贝构造函数
+
+#### 没有自定义构造函数时
+
+编译器会提供 默认无参构造函数 和 拷贝构造函数。
+
+默认的无参构造函数是空函数，什么都不干。
+
+拷贝构造函数，对所有成员进行浅拷贝。
 
 ### 成员初始化表
 
@@ -711,4 +775,12 @@ struct Stack{
 
 ---
 
-### 继承
+### 继承概念
+
+目的：基于目标代码的复用
+
+思想：对事物进行分类。派生类是基类的具体化。把事物（概念）以层次结构表示出来，有利于描述和解决问题。
+
+可用于：增量开发
+
+### 
