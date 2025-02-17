@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "07cebf898c168712",
+        "id": "419fef21581abb52",
         "type": "tabs",
         "children": [
           {
-            "id": "e8673d2480504184",
+            "id": "ccab07dfdeb6781f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "人机交互/Lec-7 评估技术-用户测试.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Lec-7 评估技术-用户测试"
+              "title": "新标签页"
             }
           }
         ]
@@ -40,7 +36,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -77,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 367.5026054382324
+    "width": 214.50260543823242
   },
   "right": {
     "id": "ba980ed45c6b9413",
@@ -106,10 +103,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "人机交互/Lec-7 评估技术-用户测试.md"
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Lec-7 评估技术-用户测试 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -128,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "人机交互/Lec-4 评估的基础知识.md",
+                "file": "嵌入式/NJUSE-嵌入式期末复习.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +137,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Lec-4 评估的基础知识 的反向链接列表"
+              "title": "NJUSE-嵌入式期末复习 的反向链接列表"
             }
           },
           {
@@ -147,12 +146,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "人机交互/Lec-4 评估的基础知识.md",
+                "file": "嵌入式/NJUSE-嵌入式期末复习.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Lec-4 评估的基础知识 的出链列表"
+              "title": "NJUSE-嵌入式期末复习 的出链列表"
             }
           }
         ],
@@ -173,44 +172,44 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "88ab7a495627e29b",
+  "active": "ccab07dfdeb6781f",
   "lastOpenFiles": [
-    "人机交互/Lec-6 评估技术-询问用户与专家.md",
-    "人机交互/Lec-5 评估技术-观察用户.md",
+    "CS149-并行计算/Asst3.md",
+    "CS149-并行计算/Asst1.md",
+    "芝士收容所/读论文-一种私有信息检索在GPU上的高效实现.md",
+    "芝士收容所/读论文-Vectorized Batch PIR.md",
+    "机器学习/Pytorch DataLoader 加速.md",
+    "Van 游戏/暗喻幻想.md",
+    "Van 游戏",
+    "未命名.md",
+    "C++拾遗/C++ 强制类型转换.md",
+    "C++拾遗/STL-容器.md",
+    "C++拾遗/关键字.md",
+    "芝士收容所/读论文-YOLO v1.md",
+    "嵌入式/NJUSE-嵌入式期末复习.md",
     "人机交互/Lec-4 评估的基础知识.md",
     "人机交互/Lec-7 评估技术-用户测试.md",
-    "人机交互/Lec-11 交互模型与理论.md",
-    "人机交互/Lec-8 交互式系统的需求.md",
-    "人机交互/Lec-9 交互式系统的设计.md",
-    "人机交互/Lec-10 人机交互系统基础知识.md",
-    "人机交互/Lec-3 交互设计原则与目标.md",
-    "人机交互/Lec-12 以用户为中心.md",
     "人机交互/Lec-1 人机交互概述.md",
-    "往年卷回忆/形式语言与自动机-2024.md",
-    "芝士收容所/读论文-YOLO v1.md",
+    "C++拾遗/STL-算法.md",
+    "机器学习/SE-ML01-概要.md",
+    "嵌入式",
+    "机器学习/SE-ML06-支持向量机.md",
+    "机器学习/SE-ML05-K 邻近.md",
+    "机器学习/SE-ML04-决策树.md",
+    "Python/Python 虚拟环境.md",
+    "机器学习/SE-ML03-线性模型.md",
+    "机器学习/SE-ML02-模型评估与选择.md",
+    "机器学习/SE-ML-11 高斯混合模型.md",
+    "机器学习/SE-ML08-神经网络.md",
+    "软件测试/04-测试用例优先级.md",
+    "软件测试",
     "往年卷回忆",
-    "随记/点子王.md",
-    "随记/随记.md",
-    "CS149-并行计算/Asst1.md",
-    "C++拾遗/C++期末复习.md",
-    "C++拾遗/OO 杂项.md",
-    "C++拾遗/OO-继承与派生.md",
-    "C++拾遗/流.md",
-    "C++拾遗/异常处理.md",
-    "C++拾遗/运算符重载.md",
-    "C++拾遗/C++ 强制类型转换.md",
-    "C++拾遗/杂项.md",
-    "C++拾遗/关键字.md",
-    "C++拾遗/更新计划.md",
     "大数据分析大作业-论文检索平台",
     "Python",
     "人机交互",
     "游记",
     "芝士收容所",
     "CS149-并行计算",
-    "C++拾遗",
-    "算法与数据结构",
-    "并行计算",
     "images/Pasted image 20240930100846.png",
     "images/Pasted image 20240930100244.png"
   ]

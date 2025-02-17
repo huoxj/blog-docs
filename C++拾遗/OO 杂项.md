@@ -1,3 +1,7 @@
+## 类的内存模型
+
+[What does C++ Object Layout Look Like? | Nimrod's Coding Lab](https://nimrod.blog/posts/what-does-cpp-object-layout-look-like/)
+
 ## 空类默认提供的方法
 
 ```cpp
@@ -5,8 +9,10 @@ class T {};
 class T {  
 	T();                            // 构造函数
 	T(const T&);                    // 拷贝构造
+	T(const T&&);                   // 拷贝构造 rval
 	~T();                           // 析构函数
 	T& operator=(const T&);         // 拷贝赋值
+	T& operator=(const T&&);        // 拷贝赋值 rval
 	T *operator &();                // 取地址
 	const T* operator &() const;    // 取地址 const 重载版
 };

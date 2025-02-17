@@ -3,5 +3,6 @@
   "monospaceFontFamily": "JetBrains Mono",
   "baseFontSizeAction": true,
   "accentColor": "#693f58",
-  "baseFontSize": 19
+  "baseFontSize": 20,
+  "showRibbon": true
 }
