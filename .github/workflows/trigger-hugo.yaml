@@ -15,3 +15,5 @@ jobs:
           token: ${{ secrets.PERSONAL_TOKEN }}
           repository: huoxj/huoxj.github.io
           event-type: hugo-deploy
+      - name: Debug output
+        run: echo "${{ steps.dispatch.outputs.dispatch-status }}"

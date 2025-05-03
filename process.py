@@ -34,14 +34,12 @@ def walk_md(path):
         return
 
     title = md_filename[:-3]
-    date = time.strftime("%Y-%m-%d", time.localtime(os.stat(path).st_ctime))
     post_series = os.path.basename(os.path.dirname(path))
     print("- " + title)
 
     post = frontmatter.load(path)
     if not md_filename.endswith("index.md"):
         post['title'] = title
-        post['date'] = date
         post['series'] = [post_series]
     
     md_dest = os.path.join(DEST_DIR, path[len(SOURCE_DIR) + 1:])
