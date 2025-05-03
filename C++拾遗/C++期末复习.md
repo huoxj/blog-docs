@@ -9,7 +9,7 @@
 ## 结构化编程部分
 ### 强制类型转换
 
-{{< article link="/posts/C++拾遗/C++-强制类型转换" >}}
+article link="/posts/C++拾遗/C++-强制类型转换" >}}
 
 ### 表达式的副作用
 
@@ -330,13 +330,13 @@ a.type() == typeid(char) // false
 
 ### RAII 与智能指针
 
-{{< article link="/posts/C++拾遗/杂项" >}}
+article link="/posts/C++拾遗/杂项" >}}
 
 ---
 
 ### C 数组特性
 
-{{< article link="/posts/C++拾遗/指针、引用与数组" >}}
+article link="/posts/C++拾遗/指针、引用与数组" >}}
 
 ### 指针作为函数参数
 
@@ -350,7 +350,7 @@ a.type() == typeid(char) // false
 
 函数指针的解析，看：
 
-{{< article link="/posts/C++拾遗/类型解释" >}}
+article link="/posts/C++拾遗/类型解释" >}}
 
 ### 函数执行机制
 
@@ -842,7 +842,7 @@ class Empty {
 - 动机：使用操作符的语义。为自定义数据类型提供类似内置类型的操作方式。
 - 作用：提高可读性、可扩充性
 
-{{< article link="/posts/C++拾遗/运算符重载/" >}}
+article link="/posts/C++拾遗/运算符重载/" >}}
 
 ### 对象切片
 
@@ -887,8 +887,8 @@ function(derived);  // Derived
 
 ### 异常处理
 
-{{< article link="/posts/C++拾遗/异常处理/" >}}
+article link="/posts/C++拾遗/异常处理/" >}}
 
 ### 右值引用
 
-{{< article link="/posts/C++拾遗/移动语义与右值引用/" >}}
+article link="/posts/C++拾遗/移动语义与右值引用/" >}}

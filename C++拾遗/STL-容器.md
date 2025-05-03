@@ -1,16 +1,4 @@
-## 前言
-
-STL 有五大组件：
-
-- 容器（Container），数据结构；
-- 迭代器（Iterator），提供了一种顺序访问容器中对象的方法。
-- 算法（Algorithm），是用来操作容器中的数据的模板函数。
-- 仿函数（Functor），就是使一个类的使用看上去象一个函数，就是类中实现一个operator()。
-- 适配器（Adaptor），对原有的容器进行包装，给换一套接口。
-
-## 容器
-
-### 序列容器
+# 序列容器
 
 序列容器实现能按顺序访问的数据结构。
 
@@ -22,8 +10,8 @@ STL 有五大组件：
 - `forward_list`：单向链表。性能比 list 略好，基本和 C 中的链表无异 C++11
 - `inpalce_vector`：可动态调整大小的固定容量原位连续数组 C++26
 
-#### 一般操作
-##### 构造
+## 一般操作
+### 构造
 
 省略返回类型以及一些无关紧要的参数类型。
 
@@ -32,18 +20,18 @@ STL 有五大组件：
 - `(it1, it2)`：从另一个 vector 的迭代器构造，得到子 vector
 - `(count, T element)`：含 count 个 element
 
-##### 赋值
+### 赋值
 
 - 赋值号
 - `assign` 函数。和构造函数参数是一致的。
 - `swap` 交互两个容器。
 
-##### 元素访问
+### 元素访问
 
 - `operator[]`。数组的访问方式。可以访问任意下标的元素。
 - `at(index)`。访问下标 index 处的元素。 
 
-##### 元素操作
+### 元素操作
 
 - `push_front(T e)` `push_back(T e)`：头尾部加入元素
 - `pop_back()` `pop_front()`：尾部删除
@@ -51,19 +39,24 @@ STL 有五大组件：
 - `erase(it) / erase(it1, it2)`：it 处删除 / \[it, it2\) 处删除
 - `clear()`：清空
 
-#### 说明
+> push_back V.S. emplace_back
+> tl dr. 如果传入的是构造参数，后者直接在vector里构造，效率比前者更高。
+> 如果传入的是一个已经构造好的对象，二者是一样的。
+> 如果感兴趣，网上有很多详细的解析。
 
-##### vector
+## 说明
+
+### vector
 没有头部加入和删除元素。
 insert，erase 和 clear 复杂度 $O(n)$
 
-##### deque
+### deque
 列出的函数都有。
 
-##### list
+### list
 - `remove(T e)`：移除和 e 相等的元素
 
-### 关联容器
+# 关联容器
 
 关联容器实现能快速查找（$O(log n)$ 复杂度）的**有序**数据结构。
 
@@ -73,11 +66,11 @@ insert，erase 和 clear 复杂度 $O(n)$
 - `map`：映射
 - `multimap`：多重映射
 
-#### 相关操作
+## 相关操作
 
 set, map 大部分插入、删除与搜索都是 $O(logn)$ 的。
 
-##### 构造
+### 构造
 
 - `()`：默认无参构造
 - `<key, comp>()`：自定义仿函数 comp。默认为 `std::less`
@@ -87,17 +80,17 @@ set, map 大部分插入、删除与搜索都是 $O(logn)$ 的。
 - `(it1, it2)`：从序列容器构造
 - `(int first, int last)`：构造 first 到 last 的数字集合。左闭右开
 
-##### 赋值
+### 赋值
 
 只有赋值号和 `swap`。
 
-##### 元素访问
+### 元素访问
 
 >仅限 map
 
 - `operator[]` 和 `at()`
 
-##### 元素查找
+### 元素查找
 
 - `find(T& key)`：找到为 key 的第一个元素，返回**迭代器**。
 - `count(T& key)`：返回 key 的数目。对于 set 和 map 只会返回 0 和 1。
@@ -105,13 +98,13 @@ set, map 大部分插入、删除与搜索都是 $O(logn)$ 的。
 - `lower_bound(T& key)`：找到第一个不小于 key 的元素的迭代器。（也就是**包含**自身） 
 - `upper_bound(T& key)`：找到第一个大于 key 的迭代器。（也就是**不包含**自身）
 
-##### 元素操作
+### 元素操作
 
 - `insert` `emplace`：插入元素
 - `clear`：清空
 - `erase(T& key)` `erase(it)`：通过元素或者迭代器删除元素
 
-## 参考
+# 参考
 
 [C++ STL 教程 | 菜鸟教程](https://www.runoob.com/cplusplus/cpp-stl-tutorial.html)
 

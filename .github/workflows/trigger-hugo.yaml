@@ -1,0 +1,17 @@
+name: Trigger Hugo Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Hugo Site Build
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: huoxj/huoxj.github.io
+          event-type: hugo-deploy

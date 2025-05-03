@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 ## 谓词
 - std::all_of
 - std::any_of
