@@ -1,3 +1,7 @@
+---
+date: '2024-11-08'
+---
+
 ## Prog1-mandelbrot_threads
 使用 `std::thread` 来绘制分形图像。
 
@@ -258,4 +262,3 @@ Wrote image file mandelbrot-task-ispc.ppm
 ```
 
 计算开销变大后，CPU 主要精力就能花在正道上了。所以加速比自然增大到了一个合理的值。
-

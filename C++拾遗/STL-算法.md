@@ -1,5 +1,6 @@
 ---
-draft: "true"
+date: '2025-01-19'
+draft: 'true'
 ---
 
 ## 谓词

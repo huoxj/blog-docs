@@ -1,3 +1,7 @@
+---
+date: '2024-11-20'
+---
+
 ## 类的内存模型
 
 [What does C++ Object Layout Look Like? | Nimrod's Coding Lab](https://nimrod.blog/posts/what-does-cpp-object-layout-look-like/)

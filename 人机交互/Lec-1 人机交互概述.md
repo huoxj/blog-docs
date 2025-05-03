@@ -1,3 +1,7 @@
+---
+date: '2024-11-25'
+---
+
 ## 术语
 - `HMI`: Human-Machine Interaction
 	- `MMI`: Man-Machine Interaction

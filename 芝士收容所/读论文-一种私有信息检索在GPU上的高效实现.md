@@ -1,3 +1,7 @@
+---
+date: '2025-01-22'
+---
+
 原文 title：GPU-Based PIR for On-device ML Inference
 ## 背景
 

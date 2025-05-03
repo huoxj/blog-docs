@@ -1,3 +1,7 @@
+---
+date: '2025-03-13'
+---
+
 # tl.dr
 
 CMake 生成的 compile_commands.json 中，对 .cu 文件会生成 --options-file 的标识，而 clangd 无法识别，从而导致 clangd 报错无法找到头文件。
