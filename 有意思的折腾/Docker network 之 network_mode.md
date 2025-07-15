@@ -1,4 +1,7 @@
-通过多个 docker network，容器之间可以通过容器名进行网络访问。这一点不必多说。
+---
+date: 2025-07-15
+---
+通过多个 docker network，容器之间可以通过容器名进行网络访问。这一点不必多说。Network_mode 的 container 模式提供了直接接入容器网络的方式，而无需专门创建网络。
 
 通常使用 docker network 时，都会先使用 docker network create 创建一个网络，然后让需要通信的容器加入这个网络。Docker compose 类似：
 
@@ -18,7 +21,7 @@ networks:
 		name: test_network
 ```
 
-除此之外，还可以通过 network_mode 连接多个容器。任何容器在创建时会创建一个独立的网络，其他容器可以通过直接接入这个网络来实现通信。比如，让服务 2 接入服务 1 的网络：
+除此之外，还可以通过 network_mode 连接多个容器。任何容器在创建时会创建一个独立的网络，其他容器可以通过**直接接入**这个网络来实现通信。比如，让服务 2 接入服务 1 的网络：
 
 ```yaml
 services:
